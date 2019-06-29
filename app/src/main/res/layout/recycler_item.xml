@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivTeamFlag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/tvTeamName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvSerial"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTeamName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Team"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTeamFlag"
+        app:layout_constraintEnd_toStartOf="@+id/tvPoint"
+        app:layout_constraintStart_toEndOf="@+id/ivTeamFlag"
+        app:layout_constraintTop_toTopOf="@+id/ivTeamFlag" />
+
+    <TextView
+        android:id="@+id/tvPoint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Point"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTeamName"
+        app:layout_constraintEnd_toStartOf="@+id/tvNrr"
+        app:layout_constraintStart_toEndOf="@+id/tvTeamName"
+        app:layout_constraintTop_toTopOf="@+id/tvTeamName" />
+
+    <TextView
+        android:id="@+id/tvNrr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Nrr"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPoint"
+        app:layout_constraintTop_toTopOf="@+id/tvPoint" />
+
+    <TextView
+        android:id="@+id/tvSerial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="SL"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTeamFlag"
+        app:layout_constraintEnd_toStartOf="@+id/ivTeamFlag"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivTeamFlag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
